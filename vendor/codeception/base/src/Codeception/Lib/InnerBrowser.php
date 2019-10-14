@@ -95,7 +95,7 @@ class InnerBrowser extends Module implements Web, PageSourceSaver, ElementLocato
     }
 
     /**
-     * Send custom request to a backend using method, uri, parameters, etc.
+     * Send custom request to a apphtml5 using method, uri, parameters, etc.
      * Use it in Helpers to create special request actions, like accessing API
      * Returns a string with response body.
      *

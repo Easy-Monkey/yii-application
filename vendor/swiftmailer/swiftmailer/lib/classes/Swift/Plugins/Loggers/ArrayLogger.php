@@ -9,7 +9,7 @@
  */
 
 /**
- * Logs to an Array backend.
+ * Logs to an Array apphtml5.
  *
  * @author Chris Corbyn
  */

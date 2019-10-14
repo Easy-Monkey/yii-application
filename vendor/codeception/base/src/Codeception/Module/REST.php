@@ -63,7 +63,7 @@ class REST extends CodeceptionModule implements DependsOnModule, PartedModule, A
     ];
 
     protected $dependencyMessage = <<<EOF
-Example configuring PhpBrowser as backend for REST module.
+Example configuring PhpBrowser as apphtml5 for REST module.
 --
 modules:
     enabled:

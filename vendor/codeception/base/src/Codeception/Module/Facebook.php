@@ -57,7 +57,7 @@ use Codeception\Module as BaseModule;
  * $I->haveFacebookTestUserAccount();
  * $accessToken = $I->grabFacebookTestUserAccessToken();
  * $I->haveHttpHeader('Auth', 'FacebookToken ' . $accessToken);
- * $I->amGoingTo('send request to the backend, so that it will publish on user\'s wall on Facebook');
+ * $I->amGoingTo('send request to the apphtml5, so that it will publish on user\'s wall on Facebook');
  * $I->sendPOST('/api/v1/some-api-endpoint');
  * $I->seePostOnFacebookWithAttachedPlace('167724369950862');
  *

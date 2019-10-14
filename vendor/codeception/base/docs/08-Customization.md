@@ -13,7 +13,7 @@ and specify the paths to the other `codeception.yml` configurations that you wan
 
 ```yaml
 include:
-  - frontend/src/*Bundle
+  - appfront
   - admin
   - api/rest
 paths:

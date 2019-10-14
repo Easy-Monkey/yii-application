@@ -55,7 +55,7 @@ class SOAP extends CodeceptionModule implements DependsOnModule
     protected $requiredFields = ['endpoint'];
 
     protected $dependencyMessage = <<<EOF
-Example using PhpBrowser as backend for SOAP module.
+Example using PhpBrowser as apphtml5 for SOAP module.
 --
 modules:
     enabled:

@@ -32,43 +32,43 @@ return [
     'Development' => [
         'path' => 'dev',
         'setWritable' => [
-            'backend/runtime',
-            'backend/web/assets',
+            'apphtml5/runtime',
+            'apphtml5/web/assets',
             'console/runtime',
-            'frontend/runtime',
-            'frontend/web/assets',
-            'appservice/runtime',  //add api
-            'appservice/web/assets',  //add api
+            'appfront/runtime',
+            'appfront/web/assets',
+            'appserver/runtime',  //add api
+            'appserver/web/assets',  //add api
         ],
         'setExecutable' => [
             'yii',
             'yii_test',
         ],
         'setCookieValidationKey' => [
-            'backend/config/main-local.php',
+            'apphtml5/config/main-local.php',
             'common/config/codeception-local.php',
-            'frontend/config/main-local.php',
-            'appservice/config/main-local.php',//add api
+            'appfront/config/main-local.php',
+            'appserver/config/main-local.php',//add api
         ],
     ],
     'Production' => [
         'path' => 'prod',
         'setWritable' => [
-            'backend/runtime',
-            'backend/web/assets',
+            'apphtml5/runtime',
+            'apphtml5/web/assets',
             'console/runtime',
-            'frontend/runtime',
-            'frontend/web/assets',
-            'appservice/runtime',  //add api
-            'appservice/web/assets',  //add api
+            'appfront/runtime',
+            'appfront/web/assets',
+            'appserver/runtime',  //add api
+            'appserver/web/assets',  //add api
         ],
         'setExecutable' => [
             'yii',
         ],
         'setCookieValidationKey' => [
-            'backend/config/main-local.php',
-            'frontend/config/main-local.php',
-            'appservice/config/main-local.php',  //add api
+            'apphtml5/config/main-local.php',
+            'appfront/config/main-local.php',
+            'appserver/config/main-local.php',  //add api
         ],
     ],
 ];

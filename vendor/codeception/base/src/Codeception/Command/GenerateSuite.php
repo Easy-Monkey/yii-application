@@ -17,7 +17,7 @@ use Symfony\Component\Yaml\Yaml;
  * * ``
  * * `codecept g:suite api` -> api + ApiTester
  * * `codecept g:suite integration Code` -> integration + CodeTester
- * * `codecept g:suite frontend Front` -> frontend + FrontTester
+ * * `codecept g:suite appfront Front` -> appfront + FrontTester
  *
  */
 class GenerateSuite extends Command
