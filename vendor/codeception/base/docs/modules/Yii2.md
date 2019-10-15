@@ -80,11 +80,11 @@ modules:
             url: http://127.0.0.1:8080/
             browser: firefox
         - Yii2:
-            configFile: 'config/test.php'
+            configFile: Test.php
             part: ORM # allow to use AR methods
             transaction: false # don't wrap test in transaction
             cleanup: false # don't cleanup the fixtures
-            entryScript: index-test.php
+            entryScript: Test.php
 ```
 
 ## Fixtures

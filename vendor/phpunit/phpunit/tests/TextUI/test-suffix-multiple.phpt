@@ -4,7 +4,7 @@ phpunit --test-suffix .test.php,.my.php ../_files/
 <?php
 $_SERVER['argv'][1] = '--no-configuration';
 $_SERVER['argv'][2] = '--test-suffix';
-$_SERVER['argv'][3] = '.test.php,.my.php';
+$_SERVER['argv'][3] = 'Test.php';
 $_SERVER['argv'][4] = __DIR__ . '/../_files/';
 
 require __DIR__ . '/../bootstrap.php';

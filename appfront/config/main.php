@@ -8,6 +8,7 @@ $params = array_merge(
 
 return [
     'id' => 'app-appfront',
+    'timeZone'=>'Asia/Shanghai',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'appfront\controllers',

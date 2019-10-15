@@ -14,6 +14,7 @@ $modules = [];
 foreach (glob(__DIR__.'/fecshop_local_modules/*.php') as $filename) {
     $modules = array_merge($modules, require($filename));
 }
+
 // 服务组件
 $services = [];
 foreach (glob(__DIR__.'/fecshop_local_services/*.php') as $filename) {
