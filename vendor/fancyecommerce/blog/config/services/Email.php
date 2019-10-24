@@ -7,7 +7,7 @@
  */
 return [
     'email' => [
-        'class' => 'fecshop\services\Email',
+        'class' => 'blog\services\Email',
         
         /*
          * 下面为配置邮箱的smtp部分，你可以配置多个smtp，
@@ -71,7 +71,7 @@ return [
              * 用户中心部分的邮件的设置。
              */
             'customer' => [
-                'class' => 'fecshop\services\email\Customer',
+                'class' => 'blog\services\email\Customer',
                  /**
                   * 注册账户是否需要邮件激活
                   */
@@ -86,9 +86,9 @@ return [
                 //    'register' => [
                 //        'enable' => true,
                         // 邮件内容的动态数据提供部分
-                //        'widget'        => 'fecshop\services\email\widgets\customer\account\register\Body',
+                //        'widget'        => 'blog\services\email\widgets\customer\account\register\Body',
                         // 邮件内容的view部分
-                //        'viewPath'        => '@fecshop/services/email/views/customer/account/register',
+                //        'viewPath'        => '@blog/services/email/views/customer/account/register',
                         /*
                          * 1.默认是default，譬如下面的 'mailerConfig'  => 'default',你可以不填写，因为默认就是default
                          * 2.您可以使用上面email服务的配置项mailerConfig中的设置的各个项，譬如填写default 或者 login等。
@@ -116,18 +116,18 @@ return [
                     'login' => [
                         'enable' => false,
                         // 邮件内容的动态数据提供部分
-                        'widget'        => 'fecshop\services\email\widgets\customer\account\login\Body',
+                        'widget'        => 'blog\services\email\widgets\customer\account\login\Body',
                         // 邮件内容的view部分
-                        'viewPath'    => '@fecshop/services/email/views/customer/account/login',
+                        'viewPath'    => '@blog/services/email/views/customer/account/login',
                         // 如果不定义 mailerConfig，则会使用email service里面的默认配置
                         'mailerConfig'  => 'default',
                     ],
                     // 忘记密码发送邮件的模板的设置
                     'forgotPassword' => [
                         'enable' => true,
-                        'widget'        => 'fecshop\services\email\widgets\customer\account\forgotpassword\Body',
+                        'widget'        => 'blog\services\email\widgets\customer\account\forgotpassword\Body',
                         // 邮件内容的view部分
-                        'viewPath'    => '@fecshop/services/email/views/customer/account/forgotpassword',
+                        'viewPath'    => '@blog/services/email/views/customer/account/forgotpassword',
                         //忘记密码邮件发送后的超时时间。
                         'passwordResetTokenExpire' => 86400, // 3600*24*1, # 一天
                         // 如果不定义 mailerConfig，则会使用email service里面的默认配置
@@ -140,9 +140,9 @@ return [
                         // 联系我们的邮箱地址
 
                         // widget  邮件动态数据提供部分。
-                        'widget'        => 'fecshop\services\email\widgets\customer\contacts\Body',
+                        'widget'        => 'blog\services\email\widgets\customer\contacts\Body',
                         // 邮件内容的view部分
-                        'viewPath'    => '@fecshop/services/email/views/customer/contacts',
+                        'viewPath'    => '@blog/services/email/views/customer/contacts',
                         'address'    => '2358269014@qq.com',
                         // 如果不定义 mailerConfig，则会使用email service里面的默认配置
                         //'mailerConfig'  => 'default',
@@ -152,9 +152,9 @@ return [
                         // 订阅邮件成功后，是否发送邮件给用户
                         'enable'    => true,
                         // widget  邮件动态数据提供部分。
-                        'widget'        => 'fecshop\services\email\widgets\customer\newsletter\Body',
+                        'widget'        => 'blog\services\email\widgets\customer\newsletter\Body',
                         // 邮件内容的view部分
-                        'viewPath'    => '@fecshop/services/email/views/customer/newsletter',
+                        'viewPath'    => '@blog/services/email/views/customer/newsletter',
                         // 如果不定义 mailerConfig，则会使用email service里面的默认配置
                         'mailerConfig'  => 'default',
                     ],
@@ -163,16 +163,16 @@ return [
             ],
 
             'order' => [
-                'class' => 'fecshop\services\email\Order',
+                'class' => 'blog\services\email\Order',
                 // 各个邮件的模板部分：
                 //'emailTheme' => [
                     // 游客发送的邮件的模板配置
                    // 'guestCreate' => [
                     //    'enable' => true,
                         // 邮件内容的动态数据提供部分
-                    //    'widget'        => 'fecshop\services\email\widgets\order\create\Body',
+                    //    'widget'        => 'blog\services\email\widgets\order\create\Body',
                         // 邮件内容的view部分
-                    //    'viewPath'        => '@fecshop/services/email/views/order/create/guest',
+                    //    'viewPath'        => '@blog/services/email/views/order/create/guest',
                         /*
                          * 1.默认是default，譬如下面的 'mailerConfig'  => 'default',你可以不填写，因为默认就是default
                          * 2.您可以使用上面email服务的配置项mailerConfig中的设置的各个项，譬如填写default 或者 login等。
@@ -199,9 +199,9 @@ return [
                     //'loginedCreate' => [
                     //    'enable' => true,
                         // 邮件内容的动态数据提供部分
-                     //   'widget'        => 'fecshop\services\email\widgets\order\create\Body',
+                     //   'widget'        => 'blog\services\email\widgets\order\create\Body',
                         // 邮件内容的view部分
-                     //   'viewPath'    => '@fecshop/services/email/views/order/create/logined',
+                     //   'viewPath'    => '@blog/services/email/views/order/create/logined',
                         // 如果不定义 mailerConfig，则会使用email service里面的默认配置
                      //   'mailerConfig'  => 'default',
                     //],

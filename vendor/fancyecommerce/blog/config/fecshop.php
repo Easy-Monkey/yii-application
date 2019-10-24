@@ -18,7 +18,7 @@ $components = [];
 foreach (glob(__DIR__ . '/components/*.php') as $filename) {
     $components = array_merge($components, require($filename));
 }
-
+//print_r($services);die;
 return [
     'components'    => $components,
     'services'        => $services,
