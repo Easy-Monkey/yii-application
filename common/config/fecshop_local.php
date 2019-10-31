@@ -21,6 +21,7 @@ foreach (glob(__DIR__.'/fecshop_local_services/*.php') as $filename) {
     $services = array_merge($services, require($filename));
 }
 
+
 return [
     'modules'  => $modules,
     'services' => $services,

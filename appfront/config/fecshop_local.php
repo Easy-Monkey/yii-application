@@ -38,9 +38,11 @@ $yiiClassMap = [
 $fecRewriteMap = [
     // '\fecshop\app\appfront\modules\Cms\block\home\Index'  => '\fectfurnilife\appfront\modules\Cms\block\home\Index',
 ];
+
+
 return [
     'modules'  => $modules,
-//    'services' => $services,
+    'services' => $services,
     'components' => $components,
 //    'yiiClassMap' => $yiiClassMap,
 //    'fecRewriteMap' => $fecRewriteMap,

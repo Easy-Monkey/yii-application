@@ -3,13 +3,14 @@
 namespace yii\web\services;
 
 use Yii;
-use yii\base\Object as base;
+
+use yii\base\BaseObject;
 use yii\base\InvalidConfigException;
 /**
  * @author Terry Zhao <2358269014@qq.com>
  * @since 1.0
  */
-class Service extends  base
+class Service extends  BaseObject
 {
     public $childService;
     public $_childService;
