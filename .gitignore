@@ -35,9 +35,9 @@ phpunit.phar
 /.vagrant
 
 # ignore generated files
-/appfront/web/index.php
-/appfront/web/index-test.php
-/appfront/web/robots.txt
-/appadmin/web/index.php
-/appadmin/web/index-test.php
-/appadmin/web/robots.txt
+#/appfront/web/index.php
+#/appfront/web/index-test.php
+#/appfront/web/robots.txt
+#/appadmin/web/index.php
+#/appadmin/web/index-test.php
+#/appadmin/web/robots.txt
